@@ -11,16 +11,16 @@ import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-c
 import { ReactComponent as QuotesLeftIconBase } from "images/resume/quotes-l.svg"
 import { ReactComponent as SvgDecoratorBlob1 } from "images/resume/dot-pattern.svg"
 
-const FontColour = "text-black"
+const FgColour = "text-black"
 const BgColour = "bg-black"
-const AccentColour = "yellow-500"
+const AccentColour = "yellow-600"
 const PrimaryImage = "https://via.placeholder.com/40x60.png"
 
 const Header = tw(HeaderBase)`lg:max-w-none md:text-base`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
 const Column = tw.div``;
 const TextColumn = tw(Column)`mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl`;
-const Heading = tw(SectionHeading)`text-left ${FontColour} leading-snug xl:text-6xl`;
+const Heading = tw(SectionHeading)`text-left text-yellow-600 leading-snug xl:text-6xl`;
 const Description = tw(SectionDescription)`mt-4 lg:text-base text-gray-700 max-w-lg`;
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 inline-block w-56 tracking-wide text-center py-5 ${BgColour}`;
 const FeatureList = tw.ul`mt-12 leading-loose`;
