@@ -13,9 +13,10 @@ import { ReactComponent as SvgDecoratorBlob1 } from "images/resume/dot-pattern.s
 
 const FontColour = "text-black"
 const BgColour = "bg-black"
-const AccentColour = "text-red-500"
+const AccentColour = "yellow-500"
+const PrimaryImage = "https://via.placeholder.com/40x60.png"
 
-const Header = tw(HeaderBase)`max-w-none`;
+const Header = tw(HeaderBase)`lg:max-w-none md:text-base`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
 const Column = tw.div``;
 const TextColumn = tw(Column)`mr-auto lg:mr-0 max-w-lg lg:max-w-xl xl:max-w-2xl`;
@@ -24,7 +25,7 @@ const Description = tw(SectionDescription)`mt-4 lg:text-base text-gray-700 max-w
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 inline-block w-56 tracking-wide text-center py-5 ${BgColour}`;
 const FeatureList = tw.ul`mt-12 leading-loose`;
 const Feature = tw.li`flex items-center`;
-const FeatureIcon = tw(CheckboxIcon)`w-5 h-5 ${FontColour}`;
+const FeatureIcon = tw(CheckboxIcon)`w-5 h-5 text-${AccentColour}`;
 const FeatureText = tw.p`ml-2 font-medium text-gray-700`;
 const ImageColumn = tw(Column)`ml-auto lg:mr-0 relative mt-16 lg:mt-0 lg:ml-32`;
 const ImageContainer = tw.div`relative z-40 transform xl:-translate-x-24 xl:-translate-y-16`;
@@ -34,16 +35,16 @@ const ImageDecoratorBlob = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none z-10 absolute right-0 bottom-0 transform translate-x-10 translate-y-10 h-32 w-32 opacity-25 text-gray-900 fill-current`}
 `;
 const Testimonial = tw.div`max-w-sm rounded-b md:rounded-none relative sm:absolute bottom-0 inset-x-0 z-20 px-8 py-6 sm:px-10 sm:py-8 ${BgColour} text-gray-400 font-medium transform md:-translate-x-32 text-sm leading-relaxed md:-mr-16 xl:mr-0`
-const QuotesLeftIcon = tw(QuotesLeftIconBase)`w-16 h-16 md:w-12 md:h-12 absolute top-0 left-0 text-gray-100 md:${AccentColour} transform translate-x-1 md:-translate-x-1/2 md:-translate-y-5 opacity-10 md:opacity-100`
+const QuotesLeftIcon = tw(QuotesLeftIconBase)`w-16 h-16 md:w-12 md:h-12 absolute top-0 left-0 text-gray-100 md:text-${AccentColour} transform translate-x-1 md:-translate-x-1/2 md:-translate-y-5 opacity-10 md:opacity-100`
 const Quote = tw.blockquote``
 const CustomerName = tw.p`mt-4 font-bold`
 const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
 
 
 export default ({
-  heading = "Jordan Balsamo",
-  description = "I'm a UK-based, experienced Platform Engineer with a proven track record across the data, software and DevOps domains. I'm passionate about delivering real-world value and driving continuous improvement in product-led environments. Comfortable collaborating with technologists, business stakeholders and clients, alike.",
-  imageSrc = "https://via.placeholder.com/634x80.png",
+  heading = "DevOps Engineer",
+  description = "I'm an experienced, UK-based Platform Engineer with a proven track record across the data, software and DevOps domains. I'm passionate about delivering real-world value and driving continuous improvement in product-led environments. Comfortable collaborating with technologists, business stakeholders and clients, alike.",
+  imageSrc = PrimaryImage,
   imageDecoratorBlob = true,
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Download CV",
@@ -55,19 +56,14 @@ export default ({
     customerCompany: "KPMG"
   }
 }) => {
-  const buttonRoundedCss = buttonRounded && tw`rounded-full ${BgColour}`;
+  const buttonRoundedCss = buttonRounded && tw`rounded-full ${BgColour} hocus:bg-${AccentColour}`;
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
+      <NavLink href="https://www.linkedin.com/in/jordan-balsamo-b96444113/">LinkedIn</NavLink>
+      <NavLink href="https://github.com/jordanbalsamo">GitHub</NavLink>
       <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#">Testimonials</NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <NavLink href="/#" tw="lg:ml-12!">
-        GitHub
-      </NavLink>
       <PrimaryLink css={buttonRoundedCss} href="/#">
         Contact Me
       </PrimaryLink>
