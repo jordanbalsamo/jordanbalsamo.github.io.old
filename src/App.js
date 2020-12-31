@@ -118,7 +118,7 @@ export default function App() {
           <ComponentRenderer />
         </Route> */}
         <Route path="/">
-        <AnimationRevealPage><Resume/></AnimationRevealPage>
+          <AnimationRevealPage><Resume/></AnimationRevealPage>
         </Route>
       </Switch>
     </Router>

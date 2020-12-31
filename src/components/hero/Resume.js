@@ -15,8 +15,8 @@ const BodyColour = "gray-500"
 const AccentColour = "yellow-500"
 const TextShadow = {"text-shadow": "2px 2px #21262E"} //will get around to using Tailwind helper for this :)
 
-const PrimaryImage = "https://drive.google.com/file/d/19H-035ylhxLelyV9uQ59xmDrhqsk5Xp9/view?usp=sharing"
-const CVUrl = "https://drive.google.com/file/d/1F6ne9MyImVwi8wJaU64U3QqOtM5UtW1w/view?usp=sharing"
+const PrimaryImage = "https://drive.google.com/uc?export=view&id=1IVMXsep1bXnd_Bmie-62XSA4ZkcbAmfq"
+const CVUrl = "https://drive.google.com/file/d/1F6ne9MyImVwi8wJaU64U3QqOtM5UtW1w/view"
 const LinkedInUrl = "https://www.linkedin.com/in/jordan-balsamo-b96444113/"
 const GitHubUrl = "https://github.com/jordanbalsamo"
 
@@ -47,18 +47,18 @@ const FeedbackCompany = tw.p`mt-1 text-sm text-gray-500`
 
 export default ({
   heading = "I build infrastructure, software and data solutions",
-  description = "I'm an experienced Platform Engineer with a proven track record across the data, software and DevOps domains. I'm passionate about delivering real-world value and driving continuous improvement in product-oriented environments. Comfortable collaborating with technologists, business stakeholders and clients, alike.",
+  description = "I'm an experienced Platform Engineer with a proven track record of delivering secure, scalable, production-ready solutions across the infrastructure, software and data domains. I'm passionate about generating real-world value for my clients and driving continuous improvement in product-led environments. Comfortable collaborating with technologists, business stakeholders and clients, alike.",
   imageSrc = PrimaryImage,
   imageDecoratorBlob = true,
   primaryButtonUrl = CVUrl,
   primaryButtonText = "Download CV",
   buttonRounded = true,
   features = [
-    "Certified: Microsoft Certified Solutions Architect Expert: Azure",
+    "Certified: Azure Solutions Architect Expert (MCSE)",
     "Cloud providers: Azure, AWS",
     "Scripting: Python, node.js, Bash, PowerShell",
     "IaC: Terraform, ARM Templates",
-    "CD/CD: Azure DevOps",
+    "CI/CD: Azure DevOps",
     "OS and Server Management: Linux, Windows"
   ],
   testimonial = {
@@ -104,7 +104,7 @@ export default ({
               </TextColumn>
               <ImageColumn>
                 <ImageContainer>
-                  <Image src={imageSrc} />
+                  <Image src={imageSrc} onContextMenu={(e)=> e.preventDefault()}/>
                   {imageDecoratorBlob && <ImageDecoratorBlob />}
                   <Testimonial>
                     <QuotesLeftIcon/>
