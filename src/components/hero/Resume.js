@@ -56,7 +56,7 @@ export default ({
   features = [
     "Certified: Azure Solutions Architect Expert (MCSE)",
     "Cloud providers: Azure, AWS",
-    "Scripting: Python, node.js, Bash, PowerShell",
+    "Programming: Python, JavaScript (inc. node.js), Bash, PowerShell, SQL",
     "IaC: Terraform, ARM Templates",
     "CI/CD: Azure DevOps",
     "OS and Server Management: Linux, Windows"
