@@ -16,7 +16,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  */
 
 /* Use AnimationRevealPage as a wrapper component for your pages if you are custom building it */
-// import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 /*
  * Hero section is the top most section on the page. It contains the header as well.
@@ -118,7 +118,7 @@ export default function App() {
           <ComponentRenderer />
         </Route> */}
         <Route path="/">
-         <Resume/>
+          <AnimationRevealPage><Resume/></AnimationRevealPage>
         </Route>
       </Switch>
     </Router>
