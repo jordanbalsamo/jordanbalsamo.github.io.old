@@ -93,14 +93,6 @@ export default ({
                 <PrimaryButton as="a" href={primaryButtonUrl} css={buttonRoundedCss} target="_blank" rel="noopener noreferrer">
                   {primaryButtonText}
                 </PrimaryButton>
-                <FeatureList>
-                  {features.map((feature, index) => (
-                    <Feature key={index}>
-                      <FeatureIcon />
-                      <FeatureText>{feature}</FeatureText>
-                    </Feature>
-                  ))}
-                </FeatureList>
               </TextColumn>
               <ImageColumn>
                 <ImageContainer>
