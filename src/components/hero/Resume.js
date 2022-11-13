@@ -16,7 +16,7 @@ const AccentColour = "yellow-500"
 const TextShadow = {"text-shadow": "2px 2px #21262E"} //will get around to using Tailwind helper for this :)
 
 const PrimaryImage = "https://drive.google.com/uc?export=view&id=1IVMXsep1bXnd_Bmie-62XSA4ZkcbAmfq"
-const CVUrl = "https://drive.google.com/file/d/1F6ne9MyImVwi8wJaU64U3QqOtM5UtW1w/view"
+const CVUrl = "https://drive.google.com/file/d/1L4qRSAFnowGRZ5h5nQahz2WEVA6EquwS/view"
 const LinkedInUrl = "https://www.linkedin.com/in/jordan-balsamo-b96444113/"
 const GitHubUrl = "https://github.com/jordanbalsamo"
 
